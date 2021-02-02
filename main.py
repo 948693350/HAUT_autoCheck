@@ -298,5 +298,5 @@ def wechatPush(title,sckey,success,fail,result):
             print(e.__class__)
             
 if __name__ == '__main__':
-    mark = 0
+    mark = 1
     main()
