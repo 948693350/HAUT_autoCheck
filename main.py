@@ -101,7 +101,10 @@ def checkIn(userInfo,token):
                 "text": userInfo['classDescription']
             },
             #如果你来自其他学校，请自行打卡抓包修改地址字段
-            "areaStr": {"streetNumber":"","street":"长椿路辅路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"河南工业大学(莲花街校区)","lng":113.55064699999795 + random.random()/1000,"lat":34.83870696238093 + random.random()/1000,"address":"中原区长椿路辅路河南工业大学(莲花街校区)","text":"河南省-郑州市","code":""},
+            "areaStr": {"streetNumber": "", "street": "X242", "district": "仙游县", "city": "莆田市", "province": "福建省",
+                        "town": "", "pois": "仙游度尾艺龙阁古典家具馆", "lng": 118.588836 + random.random() / 10000,
+                        "lat": 25.399884 + random.random() / 10000, "address": "仙游县X242仙游度尾艺龙阁古典家具馆",
+                        "text": "福建省-莆田市", "code": ""},
             "reportdate": round(time.time()*1000),
             "customerid": userInfo['customerId'],
             "deptid": userInfo['classId'],
@@ -118,6 +121,70 @@ def checkIn(userInfo,token):
                 {
                     "propertyname": "symptom",
                     "value": "无症状"
+                },
+                {
+                    "propertyname": "isConfirmed",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "isdefinde",
+                    "value": "否.未隔离"
+                },
+                {
+                    "propertyname": "isGoWarningAdress",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "isTouch",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "isFFHasSymptom",
+                    "value": "没有"
+                },
+                {
+                    "propertyname": "isContactFriendIn14",
+                    "value": "没有"
+                },
+                {
+                    "propertyname": "xinqing",
+                    "value": "健康"
+                },
+                {
+                    "propertyname": "bodyzk",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "cxjh",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "isleaveaddress",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "gtjz0511",
+                    "value": "否"
+                },
+                {
+                    "propertyname": "medicalObservation",
+                    "value": "绿色"
+                },
+                {
+                    "propertyname": "ownPhone",
+                    "value": "13789098759"
+                },
+                {
+                    "propertyname": "emergencyContact",
+                    "value": "吴金梅"
+                },
+                {
+                    "propertyname": "mergencyPeoplePhone",
+                    "value": "15260945412"
+                },
+                {
+                    "propertyname": "assistRemark",
+                    "value": ""
                 }
             ],
             "customerAppTypeRuleId": 147,
